@@ -6,20 +6,22 @@ import Cart from "./pages/cart/Cart";
 const routes = [
     {
         path: '/',
-        element: <App />
-    },
-    {
-        path: 'home',
-        element: <Home />
-    },
-    {
-        path: 'shop',
-        element: <Shop />
-    },
-    {
-        path: 'cart',
-        element: <Cart />
-    }
+        element: <App />,
+        children: [
+            {
+                path: 'home',
+                element: <Home />
+            },
+            {
+                path: 'shop',
+                element: <Shop />
+            },
+            {
+                path: 'cart',
+                element: <Cart />
+            }
+        ]
+    }    
 ]
 
 export default routes;
