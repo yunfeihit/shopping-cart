@@ -1,22 +1,23 @@
-import imgStorage from "../api/imgStorage" 
+import styles from './ProductCard.module.css'
 import { useState } from "react"
 
-
-export default function ProductCard() {
-    const [loading, setLoading] = useState(true);
-    
+export default function ProductCard({img, name, price}) {
+//'productItem' is 'productData[n]'
+    const [loading, setLoading] = useState(true);    
 
     return (
-        <div className='product-card'>
-            {loading && <p>loading...</p> }
-            <img 
-                src={imgStorage.viscariaTop} alt="viscariaFront" 
-                onLoad={() => setLoading(false)}
-            />
+        <div className={styles.productCard}>
+            <div className={styles.imgContainer}>
+                {loading && <p>loading...</p> }
+                <img 
+                    src={img.front} alt={name} 
+                    onLoad={() => setLoading(false)}
+                />
+            </div>     
                          
-            <div className="description">
-                <div className="product-name">VISCARIA</div>
-                <div className="price">$199.00</div>
+            <div className={styles.description}>
+                <div className={styles.productName}>{name}</div>
+                <div className={styles.price}>{price}</div>
             </div>
         </div>
 
