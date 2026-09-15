@@ -2,6 +2,8 @@ import styles from './ProductCard.module.css'
 import { useState } from "react"
 import NumberSpinner from '../NumberSpinner/NumberSpinner.jsx'
 import { Link } from 'react-router'
+import Button from '@mui/material/Button';
+
 
 export default function ProductCard({img, name, price, id}) {
 //'productItem' is 'productData[n]'
@@ -29,6 +31,15 @@ export default function ProductCard({img, name, price, id}) {
                         max={100} 
                         defaultValue={1}
                     />
+                    <Button 
+                        variant="contained"
+                        sx={{
+                            backgroundColor: 'brown',
+                            textTransform: 'none'
+                        }}
+                    >
+                        Add to Chart
+                    </Button>
 
                 </div>
             </div>
