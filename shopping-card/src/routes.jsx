@@ -2,6 +2,7 @@ import App from "./App";
 import Home from "./pages/home/Home";
 import Shop from "./pages/shop/Shop";
 import Cart from "./pages/cart/Cart";
+import ProductDetail from "./components/ProductDetail/ProductDetail";
 
 const routes = [
     {
@@ -14,7 +15,13 @@ const routes = [
             },
             {
                 path: 'shop',
-                element: <Shop />
+                element: <Shop />,
+                children: [
+                    {
+                        path: "products/:productId",
+                        element: <ProductDetail />
+                    }
+                ]
             },
             {
                 path: 'cart',
