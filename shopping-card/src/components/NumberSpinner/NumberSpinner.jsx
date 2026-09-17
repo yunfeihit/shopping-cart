@@ -41,6 +41,7 @@ function NumberSpinner({ id: idProp, label, error, size = 'medium', ...other }) 
         </FormControl>
       )}
     >
+    {label && (
       <BaseNumberField.ScrubArea
         render={
           <Box component="span" sx={{ userSelect: 'none', width: 'max-content' }} />
@@ -67,6 +68,7 @@ function NumberSpinner({ id: idProp, label, error, size = 'medium', ...other }) 
           />
         </BaseNumberField.ScrubAreaCursor>
       </BaseNumberField.ScrubArea>
+    )}
       <Box sx={{ display: 'flex' }}>
         <BaseNumberField.Decrement
           render={

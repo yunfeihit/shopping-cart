@@ -1,0 +1,23 @@
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imgGallaryContainer {
+    width: 600px;
+}
+
+.productInfo {
+    width: 800px;   
+}
+
+.toChartBtnsContainer {
+    display: flex;
+    align-items: center;
+}
+
+.toChartBtnsContainer {
+    margin: 0;
+    padding: 0;
+}

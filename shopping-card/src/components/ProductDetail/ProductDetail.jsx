@@ -4,6 +4,9 @@ import { Link } from 'react-router'
 import productData from '../../api/productData'
 import ImageGallery from 'react-image-gallery'
 import 'react-image-gallery/styles/image-gallery.css'
+import NumberSpinner from '../NumberSpinner/NumberSpinner.jsx'
+import Button from '@mui/material/Button';
+
 
 export default function ProductDetail() {
     const { productId } = useParams();
@@ -34,19 +37,37 @@ export default function ProductDetail() {
                 <p>{product.name}</p>
             </div>
 
-            <div className={styles.imgGallaryContainer}>
-                <ImageGallery items={imgsForGallery} />
-            </div>
+            <div className={styles.main}>
+                <div className={styles.imgGallaryContainer}>
+                    <ImageGallery items={imgsForGallery} />
+                </div>
 
-            <div className={styles.productInfo}>
-                <div>{product.name}</div>
-                <div>{product.price}</div>
-                <div>{product.intro}</div>
-                <div className={styles.quantity}>
-                    <div>QUANTITY:</div>
-                    
+                <div className={styles.productInfo}>
+                    <div>{product.name}</div>
+                    <div>{product.price}</div>
+                    <div>{product.intro}</div>
+
+                    <div className={styles.toChartBtnsContainer}>
+                        <NumberSpinner
+                            min={1} 
+                            max={100} 
+                            defaultValue={1}
+                        />
+                        <Button 
+                            variant="contained"
+                            sx={{
+                                backgroundColor: 'brown',
+                                textTransform: 'none'
+                            }}
+                        >
+                            Add to Chart
+                        </Button>
+
+                    </div>
                 </div>
             </div>
+
+
 
         </>
     )
