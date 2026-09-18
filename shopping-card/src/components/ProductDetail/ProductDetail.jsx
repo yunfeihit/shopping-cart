@@ -4,8 +4,7 @@ import { Link } from 'react-router'
 import productData from '../../api/productData'
 import ImageGallery from 'react-image-gallery'
 import 'react-image-gallery/styles/image-gallery.css'
-import NumberSpinner from '../NumberSpinner/NumberSpinner.jsx'
-import Button from '@mui/material/Button';
+import AddToCart from '../AddToCart/AddToCart.jsx'
 
 
 export default function ProductDetail() {
@@ -48,21 +47,9 @@ export default function ProductDetail() {
                     <div>{product.intro}</div>
 
                     <div className={styles.toChartBtnsContainer}>
-                        <NumberSpinner
-                            min={1} 
-                            max={100} 
-                            defaultValue={1}
-                        />
-                        <Button 
-                            variant="contained"
-                            sx={{
-                                backgroundColor: 'brown',
-                                textTransform: 'none'
-                            }}
-                        >
-                            Add to Chart
-                        </Button>
-
+                    <AddToCart 
+                        productId={Number(productId)}
+                    />    
                     </div>
                 </div>
             </div>
