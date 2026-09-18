@@ -22,7 +22,8 @@ export default function AddToCart({ productId }) {
                 variant="contained"
                 sx={{
                     backgroundColor: 'brown',
-                    textTransform: 'none'
+                    textTransform: 'none',
+                    height: '40px'
                 }}
                 onClick={() => addToCart(productId, quantity)}
             >

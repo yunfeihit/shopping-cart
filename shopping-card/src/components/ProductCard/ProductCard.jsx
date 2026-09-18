@@ -21,14 +21,15 @@ export default function ProductCard({img, name, price, id}) {
             </div>     
                          
             <div className={styles.description}>
-                <div className={styles.productName}>{name}</div>
-                <div className={styles.price}>{price}</div>
-                <div className={styles.toChartBtnsContainer}>
+                <div>
+                    <div className={styles.productName}>{name}</div>
+                    <div className={styles.price}>{price}</div>
+                </div>
+
                 <AddToCart 
                     productId={id}
                 />
                 </div>
-            </div>
         </div>
 
 

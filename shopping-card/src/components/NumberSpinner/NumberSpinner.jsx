@@ -10,7 +10,13 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import OpenInFullIcon from '@mui/icons-material/OpenInFull';
 
-function NumberSpinner({ id: idProp, label, error, size = 'medium', ...other }) {
+function NumberSpinner({ 
+    id: idProp, 
+    label, 
+    error, 
+    size = 'small', 
+    ...other 
+  }) {
   let id = React.useId();
   if (idProp) {
     id = idProp;
