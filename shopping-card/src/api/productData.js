@@ -13,7 +13,7 @@ const productData = [
     {
         id: 2,
         name: '樊振东 ALC',
-        price: '$219,00',
+        price: '$219.00',
         img: {
             front: 'https://res.cloudinary.com/khxje4tw/image/upload/v1788405137/fzd-front.jpg',
             top: 'https://res.cloudinary.com/khxje4tw/image/upload/v1788405137/fzd-top.jpg',
@@ -24,7 +24,7 @@ const productData = [
     {
         id: 3,
         name: '水谷隼 ALC',
-        price: '$219,00',
+        price: '$219.00',
         img: {
             front: 'https://res.cloudinary.com/khxje4tw/image/upload/v1788419523/sgs-front.jpg',
             top: 'https://res.cloudinary.com/khxje4tw/image/upload/v1788419524/sgs-top.jpg',
@@ -46,7 +46,7 @@ const productData = [
     {
         id: 5,
         name: 'FALCIMA',
-        price: '$99,00',
+        price: '$99.00',
         img: {
             front: 'https://res.cloudinary.com/khxje4tw/image/upload/v1788420219/falcima-front.jpg',
             top: 'https://res.cloudinary.com/khxje4tw/image/upload/v1788420219/falcima-top.jpg',
@@ -57,7 +57,7 @@ const productData = [
     {
         id: 6,
         name: 'HADROW',
-        price: '$99,00',
+        price: '$99.00',
         img: {
             front: 'https://res.cloudinary.com/khxje4tw/image/upload/v1788420219/hadrow-front.jpg',
             top: 'https://res.cloudinary.com/khxje4tw/image/upload/v1788420220/hadrow-top.jpg',
@@ -68,7 +68,7 @@ const productData = [
     {
         id: 7,
         name: '林昀儒 SUPER ALC',
-        price: '$219,00',
+        price: '$219.00',
         img: {
             front: 'https://res.cloudinary.com/khxje4tw/image/upload/v1788420220/ljr-front.jpg',
             top: 'https://res.cloudinary.com/khxje4tw/image/upload/v1788420220/ljr-top.jpg',
@@ -79,7 +79,7 @@ const productData = [
     {
         id: 8,
         name: 'OUTERFORCE INNER ALC',
-        price: '$199,00',
+        price: '$199.00',
         img: {
             front: 'https://res.cloudinary.com/khxje4tw/image/upload/v1788420220/outforce-front.jpg',
             top: 'https://res.cloudinary.com/khxje4tw/image/upload/v1788420221/outforce-top.jpg',
@@ -90,7 +90,7 @@ const productData = [
     {
         id: 9,
         name: 'VISCARIA SUPER ALC',
-        price: '$239,00',
+        price: '$239.00',
         img: {
             front: 'https://res.cloudinary.com/khxje4tw/image/upload/v1788420221/viscaria-super-alc-front.jpg',
             top: 'https://res.cloudinary.com/khxje4tw/image/upload/v1788420221/viscaria-super-alc-top.jpg',
@@ -101,7 +101,7 @@ const productData = [
     {
         id: 10,
         name: '张本智和 INNERFORCE SUPER ALC',
-        price: '$219,00',
+        price: '$219.00',
         img: {
             front: 'https://res.cloudinary.com/khxje4tw/image/upload/v1788420221/zbzh-front.jpg',
             top: 'https://res.cloudinary.com/khxje4tw/image/upload/v1788420221/zbzh-top.jpg',
