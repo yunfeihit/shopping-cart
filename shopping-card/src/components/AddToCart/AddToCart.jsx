@@ -6,8 +6,11 @@ import { CartContext } from '../../context/CartContext.jsx'
 import styles from './AddToCart.module.css'
 
 export default function AddToCart({ productId }) {
-    const [quantity, setQuantity] = useState(1);
-    const { addToCart } = useContext(CartContext);
+    const { cart, addToCart } = useContext(CartContext);
+
+    const [quantity, setQuantity] = useState(
+        cart.find(item => item.id === productId)?.quantity ?? 1
+    );
 
     return (
         <div className={styles.addToCart}>
