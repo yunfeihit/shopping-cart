@@ -12,26 +12,26 @@ vi.mock('../AddToCart/AddToCart.jsx', () => ({
 }))
 
 describe('ProductCard', () => {
-    test('show product name', () => {
+    beforeEach(() => {
         render(<ProductCard 
-            img = 'imgUrl'
-            name = 'testName'
-            price = '$99'
-            id = {1}
+            img={{front: 'test.jpg'}}
+            name='testName'
+            price='$99'
+            id={1}
         />)
+    })
 
+    test('show product name', () => {
         expect(screen.getByText('testName')).toBeInTheDocument();
     })
 
     test('show product price', () => {
-        render(<ProductCard 
-            img = 'imgUrl'
-            name = 'testName'
-            price = '$99'
-            id = {1}
-        />)
-
         expect(screen.getByText('$99')).toBeInTheDocument();
+    })
+
+    test('show product img', () => {
+        const productImg = screen.getByRole('img')
+        expect(productImg).toHaveAttribute('src', 'test.jpg')
     })
 
 })
