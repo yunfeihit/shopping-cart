@@ -11,8 +11,6 @@ export default function Shop() {
     return (
         
         <div className="page">
-            <div>Shop Page</div>
-
             {isProductDetail ? 
                 <Outlet /> :
                 (

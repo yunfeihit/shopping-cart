@@ -9,7 +9,6 @@ export default function Cart() {
     
     return (
         <>
-            <div>Cart Page</div>
             <table className={styles.cartItems}>
                 <tr>
                     <th colSpan='2'>ITEM</th>

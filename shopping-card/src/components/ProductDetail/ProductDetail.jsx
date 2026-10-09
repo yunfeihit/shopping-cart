@@ -28,14 +28,6 @@ export default function ProductDetail() {
 
     return (
         <>
-            <div className={styles.navLink}>
-                <Link to='/home'>Home</Link>
-                <span>/</span>
-                <Link to='/shop'>Shop</Link>
-                <span>/</span>
-                <p>{product.name}</p>
-            </div>
-
             <div className={styles.main}>
                 <div className={styles.imgGallaryContainer}>
                     <ImageGallery items={imgsForGallery} />
@@ -53,9 +45,6 @@ export default function ProductDetail() {
                     </div>
                 </div>
             </div>
-
-
-
         </>
     )
 }

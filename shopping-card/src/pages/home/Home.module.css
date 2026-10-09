@@ -1,0 +1,27 @@
+.imgContainer {
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;    
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.intro > :nth-child(1) {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.intro > :nth-child(2) {
+    font-size: 18px;
+}
+
+.imgContainer > img {
+    width: 500px;
+    object-fit: contain;
+}

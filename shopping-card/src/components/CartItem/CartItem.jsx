@@ -18,9 +18,9 @@ export default function CartItem({productId, productQuantity}) {
     const { resetCart, deleteProduct } = useContext(CartContext);
 
     return (
-        <tr>
+        <tr className={styles.cartItem}>
             <td>
-                <img src={imgUrl} alt="product-img" />
+                <img className={styles.cartItemImg} src={imgUrl} alt="product-img" />
             </td>
             <td>{name}</td>
             <td>{price}</td>
