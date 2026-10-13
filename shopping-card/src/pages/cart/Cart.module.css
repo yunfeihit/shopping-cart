@@ -1,5 +1,34 @@
 .cartItems {
     border-spacing: 10px 30px;
     margin: 0 auto;
+    border-collapse: collapse;
 }
 
+.cartItems td {
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 18px;
+    height: 80px;
+}
+
+
+.cartItems {
+    border-spacing: 10px 30px;
+    margin: 0 auto;
+}
+
+.cartItems td {
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.headerRow th{
+    border-bottom: 1px solid black;
+    height: 60px;
+    font-size: 20px;
+}
+
+.endRow th {
+    height: 60px;
+    font-size: 20px;
+}

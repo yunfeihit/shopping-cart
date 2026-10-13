@@ -1,4 +1,5 @@
 import { createContext, useState } from 'react'
+import productData from '../api/productData';
 
 export const CartContext = createContext();
 
@@ -43,13 +44,25 @@ export default function CartProvider({ children }) {
         setCart(prevCart => prevCart.filter(item => item.id !== productId))
     }
 
+    const getTotal = () => {
+        if(cart.length === 0) return 0;
+
+        const total = cart.reduce((sum, item) => {
+            const prodPrice = parseFloat(productData.find(prod => prod.id === item.id).price.replace('$', ''));
+            return sum + item.quantity * prodPrice;
+        }, 0)
+
+        return total.toFixed(2);
+    }
+
     return (
         <CartContext.Provider 
             value={{
                 cart, 
                 addToCart, 
                 resetCart, 
-                deleteProduct
+                deleteProduct,
+                getTotal
             }}>
             { children }
         </CartContext.Provider>
