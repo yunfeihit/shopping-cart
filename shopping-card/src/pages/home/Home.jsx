@@ -14,6 +14,18 @@ export default function Home() {
                 />
             </div>
 
+            <div className={styles.imgContainer2}>
+                <img 
+                    src="https://res.cloudinary.com/khxje4tw/image/upload/v1788317774/qiaoben.jpg" 
+                    alt="Honoka Hashimoto" 
+                />
+                <div className={styles.intro2}>
+                    <div>Honoka Hashimoto</div>
+                    <div>Honoka Hashimoto is a Japanese professional table tennis player born on July 5, 1998, in Aichi Prefecture, Japan. She is famous for her defensive playing style, especially her excellent chopping technique. Playing right-handed with a shakehand grip, she uses heavy backspin, precise placement, and variations in spin to frustrate aggressive opponents. Hashimoto has achieved significant success in international competitions, including winning women's singles and doubles titles at the 2017 Croatia Open. Known for her patience, consistency, and tactical intelligence, Hashimoto is one of the most distinctive defensive players in Japanese women's table tennis.</div>
+                </div>
+
+            </div>
+
         </>
 
     )
