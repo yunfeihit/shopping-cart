@@ -26,7 +26,11 @@ export default function AddToCart({ productId }) {
                 sx={{
                     backgroundColor: 'brown',
                     textTransform: 'none',
-                    height: '40px'
+                    height: '40px',
+                    transition: 'transform 0.2s ease',
+                    '&:hover': {
+                        transform: 'scale(1.05)'
+                    }
                 }}
                 onClick={() => addToCart(productId, quantity)}
             >

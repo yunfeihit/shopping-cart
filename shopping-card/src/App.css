@@ -9,7 +9,7 @@
     color: white;
 }
 
-.page-nav {
+.pageNav {
     border: 1px solid black;
     display: flex;
     justify-content: space-around;
@@ -18,9 +18,22 @@
     height: 40px;
     background-color: rgb(14, 55, 78);
     margin-bottom: 30px;
+    height: 50px;
 }
 
-.page-nav a {
+.pageNav a {
     text-decoration: none;
     color: white;
+}
+
+.pageLink:hover {
+    color: rgb(255, 191, 88);
+    font-weight: 800;
+    transform: scale(1.15);
+}
+
+.pageLink {
+    transition: 
+        transform 0.2s ease,
+        font-weight 0.2s ease;
 }

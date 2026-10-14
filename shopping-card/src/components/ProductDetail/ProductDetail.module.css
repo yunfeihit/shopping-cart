@@ -21,3 +21,43 @@
     margin: 0;
     padding: 0;
 }
+
+.prodName {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.prodPrice {
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.prodIntro {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* nav back btn */
+.navBackBtn {
+    background-color: white;
+    border: none;
+    font-size: 19px;
+    font-weight: 300;
+    color: rgb(14, 55, 78);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 40px;
+    margin-left: 80px;
+    margin-top: -20px;
+    transition: 
+        transfrom 0.2s ease,
+        color 0.2s ease;
+}
+
+.navBackBtn:hover {
+    color: #A52A2A;
+    transform: scale(1.1);
+}

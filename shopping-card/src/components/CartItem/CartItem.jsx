@@ -44,7 +44,11 @@ export default function CartItem({productId, productQuantity}) {
                         backgroundColor: 'brown',
                         textTransform: 'none',
                         height: '40px',
-                        marginLeft: '30px'
+                        marginLeft: '30px',
+                        transition: 'transform 0.2s ease',
+                        '&:hover': {
+                        transform: 'scale(1.05)'
+                    }
                     }}
                     onClick={() => deleteProduct(productId)}
                 >

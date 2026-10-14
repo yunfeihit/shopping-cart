@@ -11,11 +11,11 @@ export default function App() {
         <header>
             <div className="title">PingPang Blades</div>
 
-            <nav className='page-nav'>
-                <Link to='home'>Home</Link>
-                <Link to='shop'>Shop</Link>
+            <nav className='pageNav'>
+                <Link to='home' className='pageLink'>Home</Link>
+                <Link to='shop' className='pageLink'>Shop</Link>
                 <Badge badgeContent={cart.length} color="primary">
-                    <Link to='cart'>Cart</Link>
+                    <Link to='cart' className='pageLink'>Cart</Link>
                 </Badge>            
             </nav>
 
