@@ -43,7 +43,8 @@ export default function CartItem({productId, productQuantity}) {
                     sx={{
                         backgroundColor: 'brown',
                         textTransform: 'none',
-                        height: '40px'
+                        height: '40px',
+                        marginLeft: '30px'
                     }}
                     onClick={() => deleteProduct(productId)}
                 >

@@ -1,5 +1,5 @@
 .cartItems {
-    border-spacing: 10px 30px;
+    border-spacing: 10px 130px;
     margin: 0 auto;
     border-collapse: collapse;
 }
@@ -23,7 +23,6 @@
 }
 
 .headerRow th{
-    border-bottom: 1px solid black;
     height: 60px;
     font-size: 20px;
 }
@@ -31,4 +30,16 @@
 .endRow th {
     height: 60px;
     font-size: 20px;
+}
+
+.cartItems tr:nth-child(3) {
+    border-top: 1px solid black;
+}
+
+.cartItems tr:nth-last-child(2) {
+    border-bottom: 1px solid black;
+}
+
+.cartItems tr {
+    height: 100px;
 }

@@ -3,12 +3,17 @@ import Home from "./pages/home/Home";
 import Shop from "./pages/shop/Shop";
 import Cart from "./pages/cart/Cart";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
+import { element } from "prop-types";
 
 const routes = [
     {
         path: '/',
         element: <App />,
         children: [
+            {
+                index: true,
+                element: <Home />
+            },
             {
                 path: 'home',
                 element: <Home />
